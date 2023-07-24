@@ -1,8 +1,5 @@
-// modules
 import "./PostList.css";
 import { PropTypes } from 'prop-types';
-
-// components
 import ButtonSave from "../ui-elems/ButtonSave";
 import PostCard from "../PostCard/PostCard";
 
@@ -12,7 +9,7 @@ function PostList({ posts, loading }) {
     return (
       <PostCard
         key={post.id}
-        author_name={"Ilnaz Gilyazov"}
+        author_name={"Nickker"}
         avatar_url={'#'}
         post_content={post.content}
       />
@@ -39,7 +36,7 @@ function PostList({ posts, loading }) {
         (posts === null)
           ?
           <p className="post-list" style={{ color: 'gray', }}>
-            Сорян, постов нет...
+            Постов нет
           </p>
           :
           loading ? <p>Загружаем данные...</p> : <PostListElement posts={posts} />
