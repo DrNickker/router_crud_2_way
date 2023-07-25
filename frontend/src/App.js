@@ -18,9 +18,8 @@ function App() {
 
   return (
     <div className="App">
-      <p className="notice">
-        для работы приложения требуется паралельный активный роутер{" "}
-        <strong>запусти в терминале "cd /backend/ && npm start"</strong>
+      <p className="notice"> 
+        <strong>запустить в терминале "cd /backend/ && npm run start"</strong>
       </p>
       <hr />
       <Router>

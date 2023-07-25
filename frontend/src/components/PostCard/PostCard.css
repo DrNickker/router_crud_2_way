@@ -1,26 +1,47 @@
 .single-post-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-  width: 70vw;
+  align-items: center;
+  width: 40vw;
+  margin: 1vw;
+}
+
+.single-post-header {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .post-meta-container {
   display: flex;
   flex-direction: row;
-  
+  align-items: center;
+  margin: 20px;
+}
 
+.post-meta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
 }
 
 .author-name {
   text-align: left;
   color: gray;
+  margin: 10px;
   align-items: center;
 }
 
 .post-meta {
   display: flex;
   align-items: center;
-  width: 70vw;
+  width: 30vw;
+}
+
+.user-avatar {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+  align-items: center;
 }
