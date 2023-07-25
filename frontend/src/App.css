@@ -5,8 +5,8 @@
 }
 
 .App {
-  margin: 1rem;
-  width: calc(100% - 1rem);
+  margin: 10vh;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
