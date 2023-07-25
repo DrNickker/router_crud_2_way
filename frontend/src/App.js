@@ -1,9 +1,6 @@
-// modules
 import "./App.css";
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-// components
 import PostList from "./components/PostList/PostList";
 import NewPost from "./components/NewPost/NewPost";
 import getRequest from "./requests/getRequest.js";
