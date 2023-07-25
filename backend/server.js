@@ -31,6 +31,7 @@ app.get("/posts/:id", (req, res) => {
 });
 
 app.post("/posts", (req, res) => {
+  console.log("req", req)
   posts.push({ ...req.body, id: nextId++, created: Date.now() });
   res.status(204);
   res.end();

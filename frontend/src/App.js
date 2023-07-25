@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     console.log('useEffect app js');
-    const newData = getRequest(process.env.REACT_APP_POSTS_URL, "posts", setloading);
+    const newData = getRequest(process.env.REACT_APP_POSTS_URL, "/posts", setloading);
     newData.then(data => setPosts(data));
   }, []
   );

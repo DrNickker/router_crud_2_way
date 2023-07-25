@@ -4,7 +4,7 @@ import ButtonSave from "../ui-elems/ButtonSave";
 import PostCard from "../PostCard/PostCard";
 
 function PostList({ posts, loading }) {
-  console.log("postlist posts: ", posts);
+
   const showPosts = (posts) => posts.map(post => {
     return (
       <PostCard

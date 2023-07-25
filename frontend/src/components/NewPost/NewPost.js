@@ -7,7 +7,7 @@ function NewPost() {
   const addNewPostSubmitHandler = (event) => {
     event.preventDefault();
     const input = event.target[0];
-    console.log("e.target:", event.target[0]);
+    console.log("e.target:", input.value.trim());
     let formValue = input.value.trim();
 
     // todo remove log button handler
@@ -16,7 +16,7 @@ function NewPost() {
     // validate text length
     if (formValue.length > 0) {
       const newPostId = nanoid();
-      makePostRequest(process.env.REACT_APP_POSTS_URL + `posts/${newPostId}`, {
+      makePostRequest(process.env.REACT_APP_POSTS_URL + `/posts`, {
         id: newPostId,
         content: formValue,
         timestamp: new Date(),
